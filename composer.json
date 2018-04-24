@@ -1,0 +1,26 @@
+{
+    "name": "yadavaditya0/php-noframework-hackathon-starter",
+    "description": "Boilerplate for building PHP web applications with NOFRAMEWORK & getting ahead in Hachathons",
+    "keywords": ["noframework", "php"],
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Aditya Yadav",
+            "email": "yadavaditya0@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"copy('.env.example', '.env');\""
+        ]
+    },
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    }
+}
