@@ -31,7 +31,6 @@ class QueryBuilder
     public function selectAll($table)
     {
         $statement = $this->pdo->prepare("select * from {$table}");
-
         $statement->execute();
 
         return $statement->fetchAll(PDO::FETCH_CLASS);
@@ -51,13 +50,30 @@ class QueryBuilder
             implode(', ', array_keys($parameters)),
             ':' . implode(', :', array_keys($parameters))
         );
-
         try {
             $statement = $this->pdo->prepare($sql);
-
             $statement->execute($parameters);
         } catch (\Exception $e) {
-            //
+            die($e);
+        }
+    }
+
+    /**
+     * Delete a record from a table.
+     *
+     * @param  string $table
+     * @param  string $parameters
+     */
+    public function delete($table, $parameters)
+    {
+        $sql = sprintf(
+            'delete from %s where %s',
+            $table, $parameters);
+        try {
+            $statement = $this->pdo->prepare($sql);
+            $statement->execute();
+        } catch (\Exception $e) {
+            die($e);
         }
     }
 }

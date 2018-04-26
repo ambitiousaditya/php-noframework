@@ -1,5 +1,5 @@
 <?php
-
+//db configuration
 return [
     'database' => [
         'name' => 'noframework',
