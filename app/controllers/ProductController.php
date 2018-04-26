@@ -15,18 +15,8 @@ class ProductController
     /**
      * Show the about page.
      */
-    public function about()
+    public function add()
     {
-        $company = 'Laracasts';
-
-        return view('about', ['company' => $company]);
-    }
-
-    /**
-     * Show the contact page.
-     */
-    public function contact()
-    {
-        return view('contact');
+        return view('add');
     }
 }
