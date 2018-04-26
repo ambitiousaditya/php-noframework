@@ -16,7 +16,7 @@ git clone https://github.com/yadavaditya0/google-drive.git
 cd php-noframework
 
 # create a database (with mysql)
-# And update config.php file with database credentials
+# update config.php file with database credentials
 
 # install composer dependencies
 composer install
