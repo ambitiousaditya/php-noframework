@@ -9,18 +9,18 @@ Prerequisites
 #### Via Cloning The Repository:
 
 ```bash
-# Get The Project
+# get the project
 git clone https://github.com/yadavaditya0/google-drive.git
 
-# Change Directory
+# change directory
 cd php-noframework
 
-# Create a database (with mysql)
+# create a database (with mysql)
 # And update config.php file with database credentials
 
-# Install Composer Dependencies
+# install composer dependencies
 composer install
 
-# Run PHP Develoment Server
+# run PHP develoment server
 php -S localhost:8080
 ```
