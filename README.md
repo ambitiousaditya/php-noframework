@@ -10,7 +10,7 @@ Prerequisites
 
 ```bash
 # get the project
-git clone https://github.com/yadavaditya0/google-drive.git
+git clone https://github.com/yadavaditya0/php-noframework.git
 
 # change directory
 cd php-noframework
